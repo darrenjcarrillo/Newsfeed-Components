@@ -158,7 +158,7 @@ function createNewsFeed(
   articleParagraph1.textContent = firstParagraph;
   articleParagraph2.textContent = secondParagraph;
   articleParagraph3.textContent = thirdParagraph;
-  // articleButton.textContent = "\u25bc";
+  articleButton.textContent = "\u25bc";
 
   // Set up structure
 
@@ -171,7 +171,7 @@ function createNewsFeed(
 
   // Make Event Listener
 
-  article.addEventListener("click", e => {
+  articleButton.addEventListener("click", e => {
     console.log("Button Licked");
     article.classList.toggle("article-open");
   });

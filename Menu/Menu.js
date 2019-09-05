@@ -34,7 +34,7 @@ let menuItems = [
   
 */
 
-function headerMen(array) {
+function headerMenu(array) {
   const menu = document.createElement("div");
   menu.classList.add("menu");
 
@@ -57,3 +57,13 @@ function headerMen(array) {
 
   return menu;
 }
+
+const header = headerMenu(menuItems);
+
+const menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener("click", e => {
+  console.log("are you working");
+  header.classList.toggle("menu--open");
+});
+
+document.querySelector(".header").append(header);
